@@ -226,12 +226,14 @@
       <button type="submit">Register</button>
     </form>
   </div>
-
-  <div class="success" id="successMsg">
+  
+ <!-- <div class="success" id="successMsg">
     <p>✅ Registration submitted successfully!</p>
     <p>Join the WhatsApp group here:</p>
     <a href="https://chat.whatsapp.com/KxwJYBU2rfgCTgB3YpiGGL" target="_blank">Join WhatsApp Group</a>
   </div>
+  -->
+ 
 
   <div class="error" id="errorMsg">
     There was an error submitting your registration. Please try again.
@@ -244,6 +246,8 @@
     function handleSubmit() {
       document.getElementById('formContainer').style.display = 'none';
       setTimeout(() => {
+
+        
         document.getElementById('successMsg').style.display = 'block';
         document.getElementById('errorMsg').style.display = 'none';
       }, 1000);
